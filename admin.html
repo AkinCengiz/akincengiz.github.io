@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./rte_theme_default.css" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="admin-tablet.css">
+    <link rel="stylesheet" media="(max-width:480px)" href="mobile.css">    
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+<body>
+    <div class="container">
+        <header id="menu-header" class="bg-dark-blue">
+            <div id="personal-img" class="row">
+                <img src="akincengiz.jpg" alt="Akın CENGİZ">
+            </div>
+            <nav id="menu" class="text-light row">
+                <h2 class="heading-medium hr-line-light">Kişisel Bilgiler</h2>
+                <ul>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-heading "></i><span>Başlık</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-id-card"></i><span>Kişisel Bilgiler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-code"></i><span>Yetenekler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-language"></i><span>Yabancı Diller</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-user"></i><span>Profil</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-box-open"></i><span>Deneyimler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-graduation-cap"></i><span>Eğitimler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-people-arrows"></i><span>Referanslar</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="general-informations">
+            <section id="main-header" class="row"> 
+                <article id="heading-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Başlık Bilgileri</h2> 
+                    <div class="table-container">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Ünvan</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                 
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title" class="form-control">Başlık</label>
+                            <input type="text" name="title" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="degree" class="form-control">Ünvan</label>
+                            <input type="text" name="degree" id="degree" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-primary">EKLE</a>
+                    </form>
+                </article>
+            </section>
+            <section id="main-profile" class="row">
+                <article id="profile-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Profil Bilgileri</h2>
+                    <div class="table-container">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Ünvan</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="about" class="form-control">Açıklama</label>
+                            <script type="text/javascript" src="./rte.js"></script>
+                            <script type="text/javascript" src='./plugins/all_plugins.js'></script>
+                            <div id="div_editor1">                                
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">EKLE</a>
+                    </form>
+                </article>
+            </section>
+            <section id="main-experience" class="row">
+                <article id="experience-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">İş Deneyimleri</h2>
+                    <div class="table-container">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Başlık</th>
+                                    <th>Başlangıç Tarihi</th>
+                                    <th>Bitiş Tarihi</th>
+                                    <th>Kurum / Şirket</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title" class="form-control">Başlık</label>
+                            <input type="text" name="title" id="title" class="form-control">
+                        </div>
+                        <div id="date-info" class="form-group">
+                            <div class="date-part">
+                                <label for="start-date" class="form-control">Başlangıç Tarihi</label>
+                                <input type="month" name="start-date" id="start-date" class="form-control">
+                            </div>
+                            <div class="date-part">
+                                <label for="end-date" class="form-control">Bitiş Tarihi</label>
+                                <input type="month" name="end-date" id="end-date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company-name" class="form-control">Çalıştığı Kurum / Şirket</label>
+                            <input type="text" name="company-name" id="company-name" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-primary">EKLE</a>
+                    </form>
+                </article>
+            </section>
+            <section id="educations" class="row">
+                <article id="experience-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Eğitimler</h2>
+                    <div class="table-container">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Bölüm</th>
+                                    <th>Başlangıç Tarihi</th>
+                                    <th>Bitiş Tarihi</th>
+                                    <th>Üniversite</th>
+                                    <th>Fakülte</th>
+                                    <th>GNO</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bilgisayar Mühendisliği - Lisans</td>
+                                    <td>Eylül 2022</td>
+                                    <td>Devam Ediyor</td>
+                                    <td>Hoca Ahmet Yesevi Üniversitesi</td>
+                                    <td>Mühendislik Fakültesi</td>
+                                    <td>3,30</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Yönetim Bilişim Sistemleri - Lisans</td>
+                                    <td>Eylül 2018</td>
+                                    <td>Haziran 2020</td>
+                                    <td>Anadolu Üniversitesi</td>
+                                    <td>Açıköğretim Fakültesi</td>
+                                    <td>3,30</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bilgisayar Programcılığı - Önlisans</td>
+                                    <td>Eylül 2016</td>
+                                    <td>Haziran 2018</td>
+                                    <td>Sakarya Üniversitesi</td>
+                                    <td>Adapazarı Meslek Yüksekolulu</td>
+                                    <td>3,30</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="department" class="form-control">Bölüm</label>
+                            <input type="text" name="department" id="department" class="form-control">
+                        </div>
+                        <div id="date-info" class="form-group">
+                            <div class="date-part">
+                                <label for="start-date" class="form-control">Başlangıç Tarihi</label>
+                                <input type="month" name="start-date" id="start-date" class="form-control">
+                            </div>
+                            <div class="date-part">
+                                <label for="end-date" class="form-control">Bitiş Tarihi</label>
+                                <input type="month" name="end-date" id="end-date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="university" class="form-control">Üniversite</label>
+                            <input type="text" name="university" id="university" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="faculty" class="form-control">Fakülte</label>
+                            <input type="text" name="faculty" id="faculty" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="gno" class="form-control">GNO</label>
+                            <input type="text" name="gno" id="gno" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-primary">EKLE</a>
+                    </form>
+                </article>                
+            </section>
+            <section id="references" class="row">
+                <article id="experience-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Referanslar</h2>
+                    <div class="table-container">
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>İsim</th>
+                                    <th>Ünvan</th>
+                                    <th>Telefon</th>
+                                    <th>Mail</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Hüseyin AYRILMAK</td>
+                                    <td>Kağıthane Belediyesi - Ruhsat ve Denetim Müdürü</td>
+                                    <td>(534) 018 33 30</td>
+                                    <td>huseyin.ayrilmak@kagithane.bel.tr</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Lorem, ipsum</td>
+                                    <td>Lorem ipsum dolor sit amet</td>
+                                    <td>(999) 999 99 99</td>
+                                    <td>Lorem@ipsum.com</td>
+                                    <td>
+                                        <a href="#" class="btn btn-success">GÜNCELLE</a>
+                                        <a href="#" class="btn btn-danger">SİL</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="reference-name" class="form-control">İsim</label>
+                            <input type="text" name="reference-name" id="reference-name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="reference-degree" class="form-control">Ünvan</label>
+                            <input type="text" name="reference-degree" id="reference-degree" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-control">Telefon</label>
+                            <input type="tel" name="phone" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="reference-email" class="form-control">Mail</label>
+                            <input type="email" name="reference-email" id="reference-email" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-primary">EKLE</a>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script>
+        var editor1 = new RichTextEditor("#div_editor1");
+        //editor1.setHTMLCode("Use inline HTML or setHTMLCode to init the default content.");
+    </script>
+</body>
+</html>
